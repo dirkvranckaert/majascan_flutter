@@ -35,32 +35,32 @@ class QrBorderView @JvmOverloads constructor(
         height = h.toFloat()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
         //Draw border
-        canvas?.drawLine(0f, 0f, width, 0f, mBorderPaint)
-        canvas?.drawLine(0f, 0f, 0f, height, mBorderPaint)
-        canvas?.drawLine(0f, height, width, height, mBorderPaint)
-        canvas?.drawLine(width, 0f, width, height, mBorderPaint)
+        canvas.drawLine(0f, 0f, width, 0f, mBorderPaint)
+        canvas.drawLine(0f, 0f, 0f, height, mBorderPaint)
+        canvas.drawLine(0f, height, width, height, mBorderPaint)
+        canvas.drawLine(width, 0f, width, height, mBorderPaint)
 
         val cornerWidth = width / 5 //四角落外框寬度
 
         //左上
-        canvas?.drawLine(0f, 0f, cornerWidth, 0f, mPaint)
-        canvas?.drawLine(0f, 0f, 0f, cornerWidth, mPaint)
+        canvas.drawLine(0f, 0f, cornerWidth, 0f, mPaint)
+        canvas.drawLine(0f, 0f, 0f, cornerWidth, mPaint)
 
         //右上
-        canvas?.drawLine(width - cornerWidth, 0f, width, 0f, mPaint)
-        canvas?.drawLine(width, 0f, width, cornerWidth, mPaint)
+        canvas.drawLine(width - cornerWidth, 0f, width, 0f, mPaint)
+        canvas.drawLine(width, 0f, width, cornerWidth, mPaint)
 
         //左下
-        canvas?.drawLine(0f, height, cornerWidth, height, mPaint)
-        canvas?.drawLine(0f, height - cornerWidth, 0f, height, mPaint)
+        canvas.drawLine(0f, height, cornerWidth, height, mPaint)
+        canvas.drawLine(0f, height - cornerWidth, 0f, height, mPaint)
 
         //右下
-        canvas?.drawLine(width - cornerWidth, height, width, height, mPaint)
-        canvas?.drawLine(width, height, width, height - cornerWidth, mPaint)
+        canvas.drawLine(width - cornerWidth, height, width, height, mPaint)
+        canvas.drawLine(width, height, width, height - cornerWidth, mPaint)
     }
 
     fun setQRCornerColor(cornerColor: Int) {
