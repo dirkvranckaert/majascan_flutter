@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/android.iml" filepath="$PROJECT_DIR$/.idea/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1373173637/gradle.iml" filepath="$PROJECT_DIR$/.idea/modules/1373173637/gradle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1373173637/gradle.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1373173637/gradle.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1373173637/gradle.test.iml" filepath="$PROJECT_DIR$/.idea/modules/1373173637/gradle.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/majascan.iml" filepath="$PROJECT_DIR$/.idea/modules/majascan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/majascan.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/majascan.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/majascan.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/majascan.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/majascan.main.iml" filepath="$PROJECT_DIR$/.idea/modules/majascan.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/majascan.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/majascan.unitTest.iml" />
     </modules>
   </component>
 </project>
