@@ -13,29 +13,11 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry
-import io.flutter.plugin.common.PluginRegistry.Registrar
 
 class MajascanPlugin : FlutterPlugin, ActivityAware,
     MethodCallHandler, PluginRegistry.ActivityResultListener {
 
     companion object {
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            registrar.activity()?.let {
-                // If a background flutter view tries to register the plugin,
-                // there will be no activity from the registrar,
-                // we stop the registering process immediately because the plugin requires an activity.
-
-                val majascanPlugin = MajascanPlugin()
-                majascanPlugin.activity = it
-                majascanPlugin.mChannel = MethodChannel(registrar.messenger(), "majascan")
-                majascanPlugin.mChannel?.setMethodCallHandler(majascanPlugin)
-
-                // 注册ActivityResult回调
-                registrar.addActivityResultListener(majascanPlugin)
-            }
-        }
-
         const val SCANRESULT = "scan"
         const val Request_Scan = 1
         const val TAG = "MajascanPlugin"
